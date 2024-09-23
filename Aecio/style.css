@@ -13,7 +13,6 @@ body {
 
 header {
     background-color: #bd0707;
-    color: rgb(255, 255, 255);
     padding: 5px;
     margin: 5px;
     text-align: center;
@@ -37,38 +36,44 @@ nav ul li {
 }
 
 main {
-    color: white;
     padding: 20px;
     margin: 15px;
 }
+
 .card {
     display: flex; 
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .card img {
     width: 32%; 
     padding: 5px;
     margin-bottom: 10px; 
 }
-h1{
+h1 {
     text-align: center;
 }
-div .soichiro_honda{
-    width: 50%;
-    height: auto;
-    margin: auto;
-    justify-content: space-between;
-    float: left;
+.soichiro_honda {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    max-width: 800px; 
+    margin: auto; 
+    text-align: center; /* Adiciona alinhamento à esquerda no texto */
 }
-p{
+.imagem {
+    width: 150px; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+p {
     margin: 0; 
-    color: white;
 }
+
 footer {
-    height: 50%;
     background-color: #bd0707;
-    color: white;
     padding: 5px;
     margin: 5px;
 }
@@ -101,8 +106,32 @@ footer {
     text-align: center;
     margin-top: 5px;
 }
-footer .facebook{
+
+footer .facebook {
     margin: 10px;
     padding: 5px;
     margin-bottom: 10px;
+}
+
+.card1, .card2, .card3, .card4 {
+    width: 100%;
+    background-color: #3d3d3d;
+    border: 1px solid #575555;
+    padding: 10px;
+    margin: 10px 0; /* Alinhando margens para evitar espaçamentos indesejados */
+    box-shadow: 2px 2px 12px 2px rgb(53, 53, 53);
+}
+
+.card-content {
+    display: flex; /* Usar flexbox para alinhar imagem e texto */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.card-image {
+    width: 45%; /* Ajusta a largura da imagem */
+    margin-right: 20px; /* Espaçamento entre imagem e texto */
+}
+
+.card-text {
+    width: 55%; /* Define a largura do texto */
 }
